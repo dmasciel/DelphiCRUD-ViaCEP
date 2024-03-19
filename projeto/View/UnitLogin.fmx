@@ -1,0 +1,157 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  Caption = 'Tex - Tecnolgia'
+  ClientHeight = 426
+  ClientWidth = 348
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lyPrincipal: TLayout
+    Align = Client
+    Size.Width = 348.000000000000000000
+    Size.Height = 426.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lyLogin: TLayout
+      Align = Center
+      Size.Width = 278.000000000000000000
+      Size.Height = 274.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtLogin: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        Position.X = 10.000000000000000000
+        Position.Y = 110.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtSenha: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Password = True
+        Position.X = 10.000000000000000000
+        Position.Y = 159.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 85.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'LOGIN'
+        TabOrder = 2
+      end
+      object Label2: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 134.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'SENHA'
+        TabOrder = 1
+      end
+      object imgLogo: TImage
+        MultiResBitmap.Height = 287
+        MultiResBitmap.Width = 559
+        MultiResBitmap = <
+          item
+          end>
+        Align = Top
+        Size.Width = 278.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rectButtonLogar: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Fill.Color = xFF3070FE
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 217.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        OnClick = rectButtonLogarClick
+        object Label3: TLabel
+          Align = Center
+          StyledSettings = [Family]
+          Size.Width = 75.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'LOGAR'
+          TabOrder = 0
+        end
+        object FloatAnimation1: TFloatAnimation
+          AutoReverse = True
+          Duration = 0.200000002980232200
+          PropertyName = 'Opacity'
+          StartValue = 1.000000000000000000
+          StopValue = 0.200000002980232200
+        end
+      end
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F80000000473424954080808087C0864880000007D494441544889ED94D10D80
+            200C442F4ED251DC945118A56EA23F6030A978957E29F74302C77B494300667E
+            1B01A06565BA89EC9E51003B211100B974B3472084A485AB07CE4886E13D4918
+            FC4E120AB7242EF8E2906C86342482EB58D827FC0A5EF7422416BC3D1B92F4E0
+            2192F400B724EEAF82BD50BBAB4730F3A11C433C40FF512D8CDA000000004945
+            4E44AE426082}
+          FileName = 'C:\Users\Rogerio Jr\Desktop\Tex Teste\images\close.png'
+        end>
+      Cursor = crHandPoint
+      MarginWrapMode = Tile
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 30.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image1Click
+    end
+  end
+end
